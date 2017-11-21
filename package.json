@@ -1,0 +1,26 @@
+{
+    "name": "vscode-wpf",
+    "displayName": "WPF for VS Code",
+    "description": "WPF services for VS Code",
+    "version": "0.0.1",
+    "publisher": "bigsby",
+    "engines": {
+        "vscode": "^1.17.0"
+    },
+    "categories": [
+        "Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "xaml",
+            "aliases": ["XAML", "xaml"],
+            "extensions": [".xaml",".xaml.cs"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "xaml",
+            "scopeName": "",
+            "path": "./syntaxes/xaml.tmLanguage.json"
+        }]
+    }
+}
